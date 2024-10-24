@@ -1,0 +1,113 @@
+:root {
+    /* Color Variables */
+    --background-color: #f5f5f5;
+    --primary-color: #606060;
+    --primary-hover-color: #2980b9;
+    --text-color: #333;
+    --border-color: #ccc;
+    --label-color: #555;
+    --error-color: #e74c3c;
+  
+    /* Font Variables */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size: 16px;
+  
+    /* Spacing Variables */
+    --padding: 25px;
+    --border-radius: 8px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 500px;
+    padding: var(--padding);
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  label {
+    color: var(--label-color);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: var(--primary-hover-color);
+  }
+  
+  #output {
+    margin-top: 15px;
+    padding: var(--padding);
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    min-height: 40px;
+  }
+  
+  #error-message {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
